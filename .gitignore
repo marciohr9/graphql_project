@@ -1,2 +1,4 @@
 node_modules
 config/acesslist.json
+.env
+.env.local
