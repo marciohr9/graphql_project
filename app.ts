@@ -1,5 +1,5 @@
 require('dotenv').config({
-    path: process.env.NODE_ENV === "dev" ? ".env.local" : ".env"
+    path: process.env.NODE_ENV === "dev" ? "config/.env.local" : "config/.env"
 });
 
 console.log(process.env.DB_MYSQL_NAME);
