@@ -1,3 +1,6 @@
+#local files
 node_modules
-config/.env
-config/.env.local
+#private configuration files
+config/.conexao.env
+config/.conexao.local.env
+#folders
