@@ -5,5 +5,13 @@ module.exports = {
     synchronize: true,
     logging: true,
     useUnifiedTopology: true,
-    entities: ["./model/mongodb/**/*.ts"]
+    entities: [
+        "./model/mongodb/**/*.ts"
+    ],
+    migrations: [
+        "/migration/mysql/**/*.ts"
+    ],
+    subscribers: [
+        "/subscriber/**/*.ts"
+    ]
  };

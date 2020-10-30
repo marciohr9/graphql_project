@@ -9,10 +9,10 @@ module.exports = {
    synchronize: true,
    logging: false,
    entities: [
-      "/model/**/*.ts"
+      "/model/mysql/**/*.ts"
    ],
    migrations: [
-      "/migration/**/*.ts"
+      "/migration/mysql/**/*.ts"
    ],
    subscribers: [
       "/subscriber/**/*.ts"
