@@ -1,7 +1,7 @@
-import {Entity, Column} from 'typeorm';
+import {Column, ChildEntity} from 'typeorm';
 import {User} from './user';
 
-@Entity({name:"client"})
+@ChildEntity()
 export class Cliente extends User {
     @Column()
     numberClient!: number;

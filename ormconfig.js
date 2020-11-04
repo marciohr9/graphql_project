@@ -1,5 +1,4 @@
 module.exports = {
-   name: "dbMYSQLConnection",
    type: process.env.DB_MYSQL_TYPE,
    host: process.env.DB_MYSQL_HOST,
    port: process.env.DB_MYSQL_PORT,
@@ -9,12 +8,13 @@ module.exports = {
    synchronize: true,
    logging: false,
    entities: [
-      "/model/mysql/**/*.ts"
+      "/model/*.ts"
    ],
    migrations: [
-      "/migration/mysql/**/*.ts"
+      "/migrations/*.ts"
    ],
-   subscribers: [
-      "/subscriber/**/*.ts"
-   ]
+   cli: {
+      migrationsDir: "migrations/",
+      entitiesDir: "model/"
+   }
 };
